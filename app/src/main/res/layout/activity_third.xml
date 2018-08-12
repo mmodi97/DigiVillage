@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.myapplication3.ThirdActivity">
+
+    <RelativeLayout
+        android:id="@+id/mylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:text="Padharo Mhare Desh"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/unifraktur"
+            android:layout_marginTop="15dp"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="5dp"
+
+            android:text="DIGITAL RAJASTHAN"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:id="@+id/digirajasthan"
+            android:fontFamily="serif"/>
+
+
+        <ImageView
+            android:id="@+id/logoimg1"
+            android:layout_width="280dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/imageView2"
+            android:background="@drawable/logo1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:foregroundGravity="center" />
+
+
+        <Button
+            android:id="@+id/googlebtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/logoimg1"
+            android:focusableInTouchMode="true"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:layout_marginTop="30dp"
+            android:defaultFocusHighlightEnabled="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/googlenew"
+            android:gravity="center"></Button>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/googlebtn"
+            android:gravity="center"
+            android:text="Developed By Mayank Modi"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            android:fontFamily="serif-monospace"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

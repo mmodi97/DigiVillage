@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.myapplication3.OtpVerification">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/mylogo"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:id="@+id/verificationcode"
+        android:textColor="@color/black"
+        android:text="Enter Verification code"/>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:layout_below="@+id/verificationcode"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter 6 digit code"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textSize="22dp" />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Resend Otp"
+        android:gravity="center"
+        android:id="@+id/resendotpbutton"
+        android:onClick="resendcode"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/code"/>
+
+    <Button
+        android:id="@+id/leftbuttonotp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/resendotpbutton"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/left" />
+
+    <Button
+        android:id="@+id/rightbuttonotp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="verifyotp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/resendotpbutton"
+        android:layout_marginLeft="245dp"
+        android:layout_toRightOf="@+id/leftbuttonotp"
+        android:background="@drawable/right" />
+
+</RelativeLayout>

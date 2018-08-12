@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyApplication3</string>
+    <string name="todo1">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="searchbar">Search here...</string>
+    <string name="title_activity_home_acitivity">HomeAcitivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_places">Map</string>
+    <string name="writecomplaint">Write Complaint</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

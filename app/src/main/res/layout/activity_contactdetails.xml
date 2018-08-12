@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.myapplication3.Contactdetail">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="142dp"
+        android:background="@drawable/firstloo"
+
+        android:id="@+id/mylogo"/>
+
+    <TextView
+        android:id="@+id/itsmylogo"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mylogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/allerata"
+        android:text="welcome to Toda Rai Singh"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/mylogo"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:id="@+id/contacttext"
+        android:textColor="@color/black"
+        android:text="Enter Your Mobile No."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/mylinear"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/contacttext"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:text="+91"
+        android:layout_marginLeft="10dp"
+        android:textSize="22dp"
+        android:paddingTop="5dp"
+        android:id="@+id/countrycode"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toLeftOf="@+id/number"
+        />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:fontFamily="serif"
+        android:layout_below="@+id/contacttext"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your No..."
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textSize="22dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/leftbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mylinear"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/left" />
+
+    <Button
+        android:id="@+id/rightbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/mylinear"
+        android:layout_marginLeft="245dp"
+        android:layout_toRightOf="@+id/leftbutton"
+        android:background="@drawable/right" />
+
+</RelativeLayout>

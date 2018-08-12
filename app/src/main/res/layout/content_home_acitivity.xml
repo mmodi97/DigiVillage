@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mayank.myapplication3.HomeActivity"
+    tools:showIn="@layout/app_bar_home_acitivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/chooselanguage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:queryHint="@string/searchbar"></SearchView>
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/chooselanguage"
+            android:layout_marginLeft="40dp"
+
+            android:background="@drawable/ic_restore_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/historytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/history"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:text="History"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Schools"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/chooselanguage"
+            android:layout_marginLeft="75dp"
+
+            android:layout_toRightOf="@+id/history"
+            android:background="@drawable/ic_location_city_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Schoolstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Schools"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="53dp"
+            android:layout_toRightOf="@+id/historytext"
+            android:text="Schools"
+            android:textColor="@color/black"
+
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Hospitals"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/chooselanguage"
+            android:layout_toEndOf="@+id/Contactstext"
+            android:background="@drawable/ic_local_hospital_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Schoolstext"
+            android:layout_marginLeft="45dp"
+
+            android:layout_below="@+id/Hospitals"
+            android:text="Hospitals"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="330dp"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/historytext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/Touristplaces"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/history"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_place_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/touristplacetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/Events"
+            android:layout_below="@+id/Touristplaces"
+            android:layout_marginBottom="10dp"
+            android:text="Places"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/News"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/bank"
+            android:layout_below="@+id/Schools"
+            android:layout_alignStart="@+id/Schools"
+            android:background="@drawable/ic_whatshot_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Newstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/News"
+            android:layout_marginLeft="77dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/Touristplaces"
+            android:text="News"
+            android:textColor="@color/black"
+
+            android:textSize="19dp" />
+
+
+        <ImageButton
+            android:id="@+id/bank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line1"
+            android:layout_alignStart="@+id/Hospitals"
+            android:background="@drawable/ic_account_balance_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/banktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bank"
+            android:layout_below="@+id/bank"
+            android:text="Banks"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="330dp"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/touristplacetext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/Events"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_alignStart="@+id/Touristplaces"
+
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_event_note_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/eventtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Events"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="38dp"
+            android:text="Events"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Contacts"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/News"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Events"
+            android:background="@drawable/ic_person_pin_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Contactstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/eventtext"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/Contacts"
+            android:text="Contacts"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Complaints"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/Contactstext"
+            android:layout_alignStart="@+id/bank"
+            android:background="@drawable/ic_email_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/complainttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Complaints"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/Contactstext"
+            android:text="Complaint"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="330dp"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/complainttext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/Advertise"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/Events"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_pages_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/adstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Advertise"
+            android:text="Ads"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Documents"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/Contacts"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Advertise"
+            android:background="@drawable/ic_insert_drive_file_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Documentstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Documents"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@+id/adstext"
+            android:text="Documents"
+            android:textColor="@color/black"
+
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/BusRoute"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/Complaints"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Documents"
+            android:background="@drawable/ic_directions_bus_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Busroutetext"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Documentstext"
+            android:layout_below="@+id/BusRoute"
+            android:layout_marginRight="-110dp"
+            android:text="Bus Route"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="330dp"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/Busroutetext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+
+        <ImageButton
+            android:id="@+id/StreetRoutes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/Advertise"
+
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_streetview_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/StreetRoutestext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/StreetRoutes"
+            android:layout_marginLeft="44dp"
+            android:text="Quiz"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/Profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/Documents"
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/StreetRoutes"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Profiletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Profile"
+            android:layout_marginLeft="77dp"
+            android:layout_toRightOf="@+id/StreetRoutestext"
+            android:text="Profile"
+            android:textColor="@color/black"
+
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+</ScrollView>

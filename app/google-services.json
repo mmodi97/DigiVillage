@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "986108935334",
+    "firebase_url": "https://myapplicationdemp.firebaseio.com",
+    "project_id": "myapplicationdemp",
+    "storage_bucket": "myapplicationdemp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986108935334:android:db9ec815a5efe5ec",
+        "android_client_info": {
+          "package_name": "com.example.mayank.myapplication3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986108935334-6rvqll1s4kuq1dseln4a10m0a7n6uuro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mayank.myapplication3",
+            "certificate_hash": "2efd61b8de92673e8c72d311cb9e909e4c47a636"
+          }
+        },
+        {
+          "client_id": "986108935334-73rfu6vbva5v5gje72vov9179ipbtcbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyUdpLwEh9VQTlvR8ghfMce9Th1qIxZ6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986108935334-73rfu6vbva5v5gje72vov9179ipbtcbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

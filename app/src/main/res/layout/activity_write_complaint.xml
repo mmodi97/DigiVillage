@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mayank.myapplication3.WriteComplaint">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/datetimetext"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:padding="3dp"
+        android:text="Today date"
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/getmylocation"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myactuallocation"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter your Address"
+        android:inputType="textMultiLine"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/myactuallocation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/datetimetext"
+        android:background="@drawable/ic_gps_not_fixed_black_24dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/mycomplaint"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/getmylocation"
+        android:hint="Write Complaint Here..."
+        android:inputType="textMultiLine"
+        android:padding="2dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/takeapicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mycomplaint"
+        android:layout_marginLeft="160dp"
+
+        android:background="@drawable/ic_camera_alt_black_24dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeapicture"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/img"
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/left" />
+
+    <Button
+        android:id="@+id/complaintsend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/cancel"
+
+        android:background="@drawable/right" />
+
+</RelativeLayout>
+</ScrollView>

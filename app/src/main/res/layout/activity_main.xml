@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.myapplication3.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+       <ImageView
+            android:id="@+id/itsmylogo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/firstloo"
+            android:contentDescription="@string/todo1" />
+
+        <TextView
+            android:id="@+id/itsmylogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/itsmylogo1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/allerata"
+            android:text="Toda Rai Singh"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itsmylogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rajasthan"
+            android:contentDescription="@string/todo3" />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
